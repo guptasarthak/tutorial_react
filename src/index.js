@@ -1,11 +1,18 @@
 import React from "react"
-import ReactDOM  from "react-dom"
+import ReactDOM from "react-dom"
 
-ReactDOM.render(
-    <ul>
-        <li>first item</li>
-        <li>second item</li>
-        <li>third item</li>
-    </ul>, 
-    document.getElementById("root")
-)
+function MyInfo() {
+    return ( 
+        <div>
+            <h1>Hi! Sarthak</h1>
+            <p>I am learning React JS so that I can build apps and website</p>
+            <ul>
+                <li>Iceland</li>
+                <li>Croatia</li>
+                <li>Brazil</li>
+            </ul>
+        </div>
+    )
+}
+
+ReactDOM.render(<MyInfo />, document.getElementById("root"))
